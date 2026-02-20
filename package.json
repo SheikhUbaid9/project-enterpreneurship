@@ -1,0 +1,24 @@
+{
+  "name": "unified-inbox-mcp-server",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "api",
+    "worker",
+    "mcp",
+    "shared"
+  ],
+  "scripts": {
+    "build": "npm run build -ws --if-present",
+    "dev:api": "npm run dev -w api",
+    "dev:worker": "npm run dev -w worker",
+    "dev:mcp": "npm run dev -w mcp",
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:worker\" \"npm run dev:mcp\""
+  },
+  "devDependencies": {
+    "@types/pg": "^8.10.0",
+    "concurrently": "^9.1.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

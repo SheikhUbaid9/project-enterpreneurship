@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 210 38% 98%;
+  --fg: 220 30% 12%;
+  --card: 0 0% 100%;
+  --border: 214 24% 88%;
+  --accent: 199 91% 48%;
+  --accent-fg: 0 0% 100%;
+  --muted: 210 30% 96%;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-bg text-fg antialiased;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.12), transparent 35%),
+    radial-gradient(circle at 90% 10%, rgba(14, 116, 144, 0.1), transparent 40%);
+}
+
+a {
+  @apply text-inherit no-underline;
+}

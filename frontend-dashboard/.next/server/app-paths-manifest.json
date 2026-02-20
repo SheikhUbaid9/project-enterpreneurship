@@ -1,0 +1,9 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/page": "app/page.js",
+  "/(protected)/settings/page": "app/(protected)/settings/page.js",
+  "/(protected)/platforms/page": "app/(protected)/platforms/page.js",
+  "/(protected)/inbox/page": "app/(protected)/inbox/page.js",
+  "/(protected)/thread/[id]/page": "app/(protected)/thread/[id]/page.js"
+}
